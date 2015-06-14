@@ -1,0 +1,131 @@
+<!--
+	/*
+	* Calculator
+	* @version 1.0
+	* @author suraz
+	* @date Jun 14, 2015
+	*/
+	-->
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="./css/style.css">
+		
+		<script src="./js/jquery-1.7.1.min.js"></script>
+		<script src="./js/jquery.key.js"></script>
+		<script>
+			$.key("esc", function() {
+				Clear()
+			});
+			$.key("space", function() {
+				Operation('=')
+			});
+			$.key("num.", function() {
+				Decimal()
+			});
+			$.key("divide", function() {
+				Operation('/')
+			});
+			$.key("multiply", function() {
+				Operation('*')
+			});
+			$.key("subtract", function() {
+				Operation('-')
+			});
+			$.key("add", function() {
+				Operation('+')
+			});
+            $.key("1", function() {
+                NumPressed(1);
+			});
+			$.key("2", function(){
+                NumPressed(2);
+			});
+            $.key("3", function() {
+                NumPressed(3);
+			});
+            $.key("4", function() {
+                NumPressed(4);
+			});
+            $.key("5", function() {
+                NumPressed(5);
+			});
+            $.key("6", function() {
+                NumPressed(6);
+			});
+            $.key("7", function() {
+                NumPressed(7);
+			});
+            $.key("8", function() {
+                NumPressed(8);
+			});
+            $.key("9", function() {
+                NumPressed(9);
+			});
+            $.key("0", function() {
+                NumPressed(0);
+			});
+            $.key("num0", function() {
+                NumPressed(0);
+			});
+            $.key("num1", function() {
+                NumPressed(1);
+			});
+            $.key("num2", function(){
+                NumPressed(2);
+			});
+            $.key("num3", function() {
+                NumPressed(3);
+			});
+			$.key("num4", function() {
+                NumPressed(4);
+			});
+			$.key("num5", function() {
+                NumPressed(5);
+			});
+			$.key("num6", function() {
+                NumPressed(6);
+			});
+			$.key("num7", function() {
+                NumPressed(7);
+			});
+            $.key("num8", function() {
+                NumPressed(8);
+			});
+            $.key("num9", function() {
+                NumPressed(9);
+			});
+		</script>
+	</head>
+<body>
+	<form class="calculator" name="Keypad" method="reversed">
+		<div class="key">
+			<input type="text" name="ReadOut" placeholder="0" class="input-box" autocomplete="off" readonly autofocus/>
+			<div class="group1">
+				<input type="button" value="C" onclick="Clear()" class="px50x50"/>
+				<input type="button" value="/" onclick="Operation('/')" class="px50x50"/>
+				<input type="button" value="*" onclick="Operation('*')" class="px50x50"/>
+				<input type="button" value="-" onclick="Operation('-')" class="px50x50"/>
+			</div>
+			<div class="group2">
+				<input type="button" value="7" onclick="NumPressed(7)" class="px50x50"/>
+				<input type="button" value="8" onclick="NumPressed(8)" class="px50x50"/>
+				<input type="button" value="9" onclick="NumPressed(9)" class="px50x50"/>
+				<input type="button" value="4" onclick="NumPressed(4)" class="px50x50"/>
+				<input type="button" value="5" onclick="NumPressed(5)" class="px50x50"/>
+				<input type="button" value="6" onclick="NumPressed(6)" class="px50x50"/>
+				<input type="button" value="1" onclick="NumPressed(1)" class="px50x50"/>
+				<input type="button" value="2" onclick="NumPressed(2)" class="px50x50"/>
+				<input type="button" value="3" onclick="NumPressed(3)" class="px50x50"/>
+				<input type="button" value="0" onclick="NumPressed(0)" class="px50x100"/>
+				<input type="button" value="." onclick="Decimal()" class="px50x50"/>
+			</div>
+			<div class="group3">
+				<input type="button" value="+" onclick="Operation('+')" class="px100x50"/>
+				<input type="button" value="=" onclick="Operation('=')" class="px100x50"/>
+			</div>
+		</div>
+	</form>
+	<div class="footer"><b>Created By:<span> Suraj Regmi</span></b></div>
+</body>
+<script src="./js/script.js"></script></html>
